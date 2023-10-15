@@ -1,39 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int factorial(int n) {
-    int i, res=1;
-    for (i +1; i<+ n; i++) {
-        res = res*i;
-    }
-    return res;
-}
-
-int combination(int n, int r){
-    int div1, div2;
-    
-    div1= factorial(n);
-    div2= factorial(n-r) * factorial (r);
-    
- return (div1/div2);
-}
-
-int main(int argc, char *argv[])
+int sumTwo (int a, int b)
 {
-    int n, r;
-    int result;
+    int result= a+b;
+    return result;
     
-    printf("input n : ");
-    
-    scanf("%d", &n);
-    
-    printf("input r : ");
-    
-    scanf("%d", &r);
-    
-    result = combination (n, r);
-    
-    printf("result: %d\n", result);
+}
+
+    int main (int argc, char *argv[])
+{
+    int a, b;
+    a=3;
+    b=5;
+    printf("sumTwo result: %i\n", sumTwo(a,b));
     
     
   system("PAUSE");	
