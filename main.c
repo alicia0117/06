@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+void print_star()
 {
-    int square( int a )
-{
- return (a *a);
+ int i;
+ for( i = 0; i < 10; i++ )
+printf("*");
 }
-int main()
+
+int main(void)
 {
- int a = 2;
- a = square(a);
- printf("a=%i\n",a);
-}
+ print_star();
+ print_star();
+ print_star();
+
   system("PAUSE");	
   return 0;
 }
