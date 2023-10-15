@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void func (void)
-{
-     int x;
-     printf("func x is at %p\n", &x);
-     }
-     
 int main(int argc, char *argv[])
 {
-    int x;
-    
-    printf("main x is at %p\n", &x);
-    func();
-  
+    int square( int a )
+{
+ return (a *a);
+}
+int main()
+{
+ int a = 2;
+ a = square(a);
+ printf("a=%i\n",a);
+}
   system("PAUSE");	
   return 0;
 }
